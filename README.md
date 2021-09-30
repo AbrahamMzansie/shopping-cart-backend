@@ -1,7 +1,7 @@
 # API Authentication and verification when getting data
 
 # How to run this project
-# (a)-Install Dependencies (frontend & backend)
+# (a)-Install Dependencies
 Naviagate to the folder shopping-cart-backend and do the following . Image below show the same technique to install dependencies . Run the following command
 #npm install
 ![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/install%20dependences.png)
