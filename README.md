@@ -32,13 +32,13 @@ Naviagate to the folder shopping-cart-backend and do the following . Image below
  ![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/register.png)
  
  # (b) Login to get Token 
- using the following end point 
- URL : http://localhost:3000/api/auth/login
- method : POST 
- body data :  {
-    "email" : "admin.admin@gmail.com",
-    "password" : "12345678"
-}
+ using the following end point <br />
+ URL : http://localhost:3000/api/auth/login <br />
+ method : POST <br />
+ body data :  { <br />
+    "email" : "admin.admin@gmail.com", <br />
+    "password" : "12345678" <br />
+} <br />
 
 # (c) WHERE TO GET TOKEN 
 Send your rest api to the server to get your secrect key to use it in cart endpoint .
@@ -50,17 +50,17 @@ Send your rest api to the server to get your secrect key to use it in cart endpo
  # TESTING CART END POINT
  
  # (1) how to create a cart 
- using the following end point 
- URL : http://localhost:3000/api/cart/create-cart
- Authorization type : Bearer token 
- method : POST 
- body data :  {
-    "cartItems" : {
-           "product" : "6154724cd721e64a14361c4b",
-           "quantity" : "1"      
-    }
+ using the following end point <br />
+ URL : http://localhost:3000/api/cart/create-cart <br />
+ Authorization type : Bearer token <br />
+ method : POST <br />
+ body data :  { <br />
+    "cartItems" : { <br />
+           "product" : "6154724cd721e64a14361c4b", <br />
+           "quantity" : "1" <br />
+    }<br />
     
-}
+}<br />
 
 # Image below show you how to create cart 
 
@@ -78,10 +78,10 @@ Do the following to add your token to your create cart end point(without token y
 
  
  # (1) HOW TO GET CART
- using the following end point 
- URL : http://localhost:3000/api/cart/get-cart
- method :GET 
- Authorization type : Bearer token
+ using the following end point <br />
+ URL : http://localhost:3000/api/cart/get-cart <br />
+ method :GET <br />
+ Authorization type : Bearer token <br />
 
 # Image below show you how to get cart 
 
@@ -97,10 +97,10 @@ Do the following to add your token to your get cart end point(without token you 
 
 
 # (1) HOW TO UPDATE CART
- using the following end point 
- URL : http://localhost:3000/api/cart/update-cart
- method :PUT 
- Authorization type : Bearer token
+ using the following end point <br />
+ URL : http://localhost:3000/api/cart/update-cart <br />
+ method :PUT <br />
+ Authorization type : Bearer token <br />
 
 # Image below show you how to update cart 
 
@@ -116,11 +116,11 @@ Do the following to add your token to your update cart end point(without token y
 
 
 # (1) HOW TO DELETE CART
- using the following end point 
- parameter : <enter cart id like below URL> for example URL = (http://localhost:3000/api/cart/delete-cart/) , parameter = 6154c477c437a05124670c80
-  URL : http://localhost:3000/api/cart/delete-cart/6154c477c437a05124670c80
-  Authorization type : Bearer token
- method :DELETE
+ using the following end point <br />
+ parameter : <enter cart id like below URL> for example URL = (http://localhost:3000/api/cart/delete-cart/) , parameter = 6154c477c437a05124670c80 <br />
+  URL : http://localhost:3000/api/cart/delete-cart/6154c477c437a05124670c80 <br />
+  Authorization type : Bearer token <br />
+ method :DELETE <br />
   
 # Image below show you how to delete cart
 
