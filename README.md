@@ -19,15 +19,15 @@ Naviagate to the folder shopping-cart-backend and do the following . Image below
  
  # (a)How to register
  
- using the following end point 
- URL : http://localhost:3000/api/auth/register
- method : POST 
- body data :  {
-    "name" : "system",
-    "email" : "admin.admin@gmail.com",
-    "password" : "12345678",
-    "isAdmin" : "false"
-}
+ using the following end point <br />
+ URL : http://localhost:3000/api/auth/register <br />
+ method : POST <br />
+ body data :  { <br />
+    "name" : "system", <br />
+    "email" : "admin.admin@gmail.com", <br />
+    "password" : "12345678", <br />
+    "isAdmin" : "false" <br />
+} <br />
  
  ![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/register.png)
  
