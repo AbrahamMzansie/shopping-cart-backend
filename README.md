@@ -42,7 +42,7 @@ Naviagate to the folder shopping-cart-backend and do the following . Image below
 
 # (c) WHERE TO GET UNIQUE API Key 
 Send your rest api to the server to get your unique API Key to use it in cart endpoint .
-![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(88).png)
+![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(96).png)
  
  
  # ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
