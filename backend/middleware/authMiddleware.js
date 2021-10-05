@@ -3,26 +3,32 @@ const User = require("../models/authModels");
 const asyncHandler = require("express-async-handler");
 
 const protect = asyncHandler(async (req, res, next) => {
-  let token;
-  if (
-    req.headers.authorization &&
-    req.headers.authorization.startsWith("Bearer")
-  ) {
+  if (req.header("api-key")) {
     try {
-      token = req.headers.authorization.split(" ")[1];
-      const decoded = jwt.verify(token, process.env.JWT_SECRET);
-      req.user = await User.findById(decoded.id).select("-password");
-      next();
+      //let api_key = req.query.api_key; //version 1 with the querystring
+      //let api_key = req.params.apikey; //version 2 with the URL params
+      let api_key = req.header("api-key"); //version 3 using a header
+      console.log(api_key);
+      req.user = await User.findOne({
+        apiKey: api_key,
+        host: process.env.HOST,
+      }).select("-password");
+      if (req.user) {
+        next();
+      } else {
+        res.status(401);
+        throw new Error("Not authorized ,API Key is invalid");
+      }
     } catch (error) {
       res.status(401);
-      throw new Error("Not authorized , token failed");
+      throw new Error("Not authorized , API Key failed or invalid");
     }
-  }
-  if (!token) {
+  } else {
     res.status(401);
-    throw new Error("Not authorized ,no token");
+    throw new Error("Not authorized ,no API key");
   }
 });
+
 const admin = (req, res, next) => {
   if (req.user && req.user.isAdmin) {
     next();
