@@ -15,7 +15,7 @@ Naviagate to the folder shopping-cart-backend and do the following . Image below
  # ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
  # Testing endpoints with PostMan
- First of all you need to register in order to get unique token created using # Json Web Token(JWT)
+ First of all you need to register in order to get unique API Key
  
  # (a)How to register
  
@@ -31,7 +31,7 @@ Naviagate to the folder shopping-cart-backend and do the following . Image below
  
  ![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/register.png)
  
- # (b) Login to get Token 
+ # (b) Login to get unique API Key 
  using the following end point <br />
  URL : http://localhost:3000/api/auth/login <br />
  method : POST <br />
@@ -40,8 +40,8 @@ Naviagate to the folder shopping-cart-backend and do the following . Image below
     "password" : "12345678" <br />
 } <br />
 
-# (c) WHERE TO GET TOKEN 
-Send your rest api to the server to get your secrect key to use it in cart endpoint .
+# (c) WHERE TO GET UNIQUE API Key 
+Send your rest api to the server to get your unique API Key to use it in cart endpoint .
 ![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(88).png)
  
  
@@ -52,7 +52,7 @@ Send your rest api to the server to get your secrect key to use it in cart endpo
  # (1) how to create a cart 
  using the following end point <br />
  URL : http://localhost:3000/api/cart/create-cart <br />
- Authorization type : Bearer token <br />
+ Authorization type : API KEY <br />
  method : POST <br />
  body data :  { <br />
     "cartItems" : { <br />
@@ -64,11 +64,11 @@ Send your rest api to the server to get your secrect key to use it in cart endpo
 
 # Image below show you how to create cart 
 
-First you need to attach your secrect obtained when login in 
-Do the following to add your token to your create cart end point(without token you cannot create cart)
-# Choose "Bearer token" as your  Authorization Type and add your token as shown below
+First you need to attach your unique API Key obtained when login in 
+Do the following to add your API Key to your create cart end point(without unique API Key you cannot create cart)
+# Choose "API Key" as your  Authorization Type and add your API Key as shown below
 
-![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(89).png)
+![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(95).png)
 
 ![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(90).png)
 
@@ -81,15 +81,15 @@ Do the following to add your token to your create cart end point(without token y
  using the following end point <br />
  URL : http://localhost:3000/api/cart/get-cart <br />
  method :GET <br />
- Authorization type : Bearer token <br />
+ Authorization type : API Key <br />
 
 # Image below show you how to get cart 
 
-First you need to attach your secrect obtained when login in 
-Do the following to add your token to your get cart end point(without token you cannot get your cart)
-# Choose "Bearer token" as your  Authorization Type and add your token as shown below
+First you need to attach your key obtained when login in 
+Do the following to add your API Key to your get cart end point(without key you cannot get your cart)
+# Choose "API Key" as your  Authorization Type and add your key as shown below
 
-![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(89).png)
+![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(95).png)
 
 ![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(91).png)
 
@@ -100,15 +100,15 @@ Do the following to add your token to your get cart end point(without token you 
  using the following end point <br />
  URL : http://localhost:3000/api/cart/update-cart <br />
  method :PUT <br />
- Authorization type : Bearer token <br />
+ Authorization type : API Key <br />
 
 # Image below show you how to update cart 
 
-First you need to attach your secrect obtained when login in 
-Do the following to add your token to your update cart end point(without token you cannot update your cart)
-# Choose "Bearer token" as your  Authorization Type and add your token as shown below
+First you need to attach your key obtained when login in 
+Do the following to add your API Key to your update cart end point(without key you cannot update your cart)
+# Choose "API Key" as your  Authorization Type and add your key as shown below
 
-![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(89).png)
+![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(95).png)
 
 ![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(92).png)
 
@@ -119,16 +119,16 @@ Do the following to add your token to your update cart end point(without token y
  using the following end point <br />
  parameter : <enter cart id like below URL> for example URL = (http://localhost:3000/api/cart/delete-cart/) , parameter = 6154c477c437a05124670c80 <br />
   URL : http://localhost:3000/api/cart/delete-cart/6154c477c437a05124670c80 <br />
-  Authorization type : Bearer token <br />
+  Authorization type : API Key <br />
  method :DELETE <br />
   
 # Image below show you how to delete cart
 
-First you need to attach your secrect obtained when login in 
-Do the following to add your token to your delete cart end point(without token you cannot delete your cart)
+First you need to attach your key obtained when login in 
+Do the following to add your key to your delete cart end point(without API key you cannot delete your cart)
 # Choose "Bearer token" as your  Authorization Type and add your token as shown below
   
-![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(89).png)
+![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(95).png)
 
 ![alt text](https://github.com/AbrahamMzansie/Screenshots/blob/master/Screenshot%20(93).png)
   
